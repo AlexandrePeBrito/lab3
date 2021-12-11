@@ -10,3 +10,8 @@
   color: rgb(243, 4, 4);
   border-radius:32px;
 }
+
+.TitleApp {
+  font-size: 20px;
+  font-style: italic;
+}
