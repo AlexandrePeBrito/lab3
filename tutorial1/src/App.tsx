@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <TitleApp></TitleApp>
       <TextField className='preencherSenha' name={'Senha'} label={'Senha:'} placeholder='Digite Aqui' textChange={(e)=>handleChange(e)}></TextField>
-      <Botao ></Botao>
+      <Botao texto={text} ></Botao>
       <div>
         {text}
         </div>
