@@ -1,14 +1,14 @@
 .App {
   display: flex;
   flex-wrap: wrap;
-  background-color: #0a43f0;
+  background-color: #64a37c;
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(243, 4, 4);
-  border-radius:32px;
+  color: rgb(96, 62, 133);
+  border-radius:300px;
 }
 
 .TitleApp {
