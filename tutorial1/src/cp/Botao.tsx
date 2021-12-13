@@ -7,16 +7,18 @@ interface bot{
     texto: string;
 }
  const Botao:FC<bot> = ({texto}) => {
-    /*const mudanca = (txt: String)=>{
-        if (txt.toLowerCase() == txt){
-            txt.toUpperCase();
+    function mudanca(){
+        if (texto.toLowerCase() == texto){
+            texto.toUpperCase();
+            return texto;
         }else{
-            txt.toLowerCase();
+            texto.toLowerCase();
+            return texto;
         }
-    }*/
+    }
     
     return(
-        <div><button onClick={mudanca(texto)}>Botao</button></div>
+        <div><button onClick={mudanca}>Botao</button></div>
         
     )
 }
