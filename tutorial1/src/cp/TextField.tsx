@@ -21,6 +21,8 @@ const TextField:FC<InputProps> = ({name, label, textChange, ...rest})=>{
        
         if(textChange) textChange(e);
     }
+
+    
     return(
 
         <div className="textField">
@@ -32,7 +34,6 @@ const TextField:FC<InputProps> = ({name, label, textChange, ...rest})=>{
                     id = {name}
                     value={text}
                     onChange = {handleChange} {...rest}/>
-
             </div>
         </div>
 

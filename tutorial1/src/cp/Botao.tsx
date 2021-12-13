@@ -1,27 +1,18 @@
-import { render } from "@testing-library/react";
 import React,{ FC, } from "react";
 import '../App.css';
 
+
 export type eventChangeText = React.ChangeEvent<HTMLInputElement>;
 interface bot{
-    texto: string;
+    onClick: ()=> void
 }
- const Botao:FC<bot> = ({texto}) => {
-    function mudanca(){
-        if (texto.toLowerCase() == texto){
-            texto.toUpperCase();
-            return texto;
-        }else{
-            texto.toLowerCase();
-            return texto;
-        }
+ const Botao:FC<bot> = ({onClick}) => {
+    const handClick = ()=>{
+        onClick();
     }
-    
     return(
-        <div><button onClick={mudanca}>Botao</button></div>
-        
-    )
+        <div><button onClick={handClick}>Botao</button></div>
+        )
 }
 
 export default Botao;
-//<input id='botao' type="button" value={'Botão'} />
